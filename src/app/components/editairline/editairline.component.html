@@ -1,0 +1,33 @@
+
+<main class="container mt-4">
+    <form [formGroup]="editFlightForm" (ngSubmit)="onSubmit()" class="p-4 border rounded bg-light">
+      <h3>Edit Flight</h3>
+  
+      <div class="mb-3">
+        <label for="flightNumber" class="form-label">Flight Number</label>
+        <input type="text" class="form-control" id="flightNumber" formControlName="flightNumber">
+      </div>
+  
+      <div class="mb-3">
+        <label for="departureAirport" class="form-label">Departure Airport</label>
+        <input type="text" class="form-control" id="departureAirport" formControlName="departureAirport">
+      </div>
+  
+      <div class="mb-3">
+        <label for="arrivalAirport" class="form-label">Arrival Airport</label>
+        <input type="text" class="form-control" id="arrivalAirport" formControlName="arrivalAirport">
+      </div>
+  
+      <div class="mb-3">
+        <label for="departureTime" class="form-label">Departure Time</label>
+        <input type="text" class="form-control" id="departureTime" formControlName="departureTime">
+      </div>
+  
+      <div class="mb-3">
+        <label for="arrivalTime" class="form-label">Arrival Time</label>
+        <input type="text" class="form-control" id="arrivalTime" formControlName="arrivalTime">
+      </div>
+  
+      <button type="submit" class="btn btn-success w-100">Update Flight</button>
+    </form>
+  </main>
