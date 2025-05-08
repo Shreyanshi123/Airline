@@ -47,8 +47,8 @@ export class FlightsService {
     return this.http.get(`${this.baseUrl}/getFlightByFlightNumber/${flightNumber}`);
   }
 
-  updateFlight(FlightId:any,FlightData:any){
-    return this.http.put(`${this.baseUrl}/Update/${FlightId}`,FlightData);
+  updateFlight(FlightNumber:string,FlightData:any){
+    return this.http.put(`${this.baseUrl}/Update/${FlightNumber}`,FlightData,{responseType:'text'});
   }
 
   addFlights(FlightData:any){
